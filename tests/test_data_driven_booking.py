@@ -26,7 +26,7 @@ class TestDataDrivenBooking:
                          f"== 200 : (Expected Status Code)"):
             assert_that(response.status_code).is_equal_to(200)
 
-        with allure.step(f"Verifying if the booking is created: {response.json()["bookingid"]}"):
+        with allure.step(f"Verifying if the booking is created: {response.json()['bookingid']}"):
             assert_that(response.json()).contains("bookingid")
 
     @pytest.mark.negative
