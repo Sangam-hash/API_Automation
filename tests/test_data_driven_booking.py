@@ -46,3 +46,6 @@ class TestDataDrivenBooking:
                          f"{response.status_code} == 500 \"Expected Status Code\" "):
             allure.attach(str(response.status_code), name="Response Status Code", attachment_type=AttachmentType.TEXT)
             assert_that(response.status_code).is_equal_to(500)
+
+
+# This is for testing purpose
